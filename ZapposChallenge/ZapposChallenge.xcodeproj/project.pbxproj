@@ -1,0 +1,774 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9F2D116D18BBBCAF00E94793 /* logo-29pt.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F2D116A18BBBCAF00E94793 /* logo-29pt.png */; };
+		9F2D116E18BBBCAF00E94793 /* logo-40pt.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F2D116B18BBBCAF00E94793 /* logo-40pt.png */; };
+		9F2D116F18BBBCAF00E94793 /* logo-60pt.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F2D116C18BBBCAF00E94793 /* logo-60pt.png */; };
+		9F2F935F18B072210034E826 /* ZapposProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F2F935E18B072210034E826 /* ZapposProduct.m */; };
+		9F2F936218B07D400034E826 /* ZapposSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F2F936118B07D400034E826 /* ZapposSelectionViewController.m */; };
+		9F5E157218AF354500C9340A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F5E157118AF354500C9340A /* Foundation.framework */; };
+		9F5E157418AF354500C9340A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F5E157318AF354500C9340A /* CoreGraphics.framework */; };
+		9F5E157618AF354500C9340A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F5E157518AF354500C9340A /* UIKit.framework */; };
+		9F5E157C18AF354500C9340A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9F5E157A18AF354500C9340A /* InfoPlist.strings */; };
+		9F5E157E18AF354500C9340A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5E157D18AF354500C9340A /* main.m */; };
+		9F5E158218AF354500C9340A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5E158118AF354500C9340A /* AppDelegate.m */; };
+		9F5E158418AF354500C9340A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F5E158318AF354500C9340A /* Images.xcassets */; };
+		9F5E158B18AF354500C9340A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F5E158A18AF354500C9340A /* XCTest.framework */; };
+		9F5E158C18AF354500C9340A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F5E157118AF354500C9340A /* Foundation.framework */; };
+		9F5E158D18AF354500C9340A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F5E157518AF354500C9340A /* UIKit.framework */; };
+		9F5E159518AF354500C9340A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9F5E159318AF354500C9340A /* InfoPlist.strings */; };
+		9F5E159718AF354500C9340A /* ZapposChallengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5E159618AF354500C9340A /* ZapposChallengeTests.m */; };
+		9F5E15A218AF370500C9340A /* ZapposViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5E15A118AF370500C9340A /* ZapposViewController.m */; };
+		9F5E15B718AF3A8200C9340A /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5E15A518AF3A8200C9340A /* AFHTTPRequestOperation.m */; };
+		9F5E15B818AF3A8200C9340A /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5E15A718AF3A8200C9340A /* AFHTTPRequestOperationManager.m */; };
+		9F5E15B918AF3A8200C9340A /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5E15A918AF3A8200C9340A /* AFHTTPSessionManager.m */; };
+		9F5E15BA18AF3A8200C9340A /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5E15AC18AF3A8200C9340A /* AFNetworkReachabilityManager.m */; };
+		9F5E15BB18AF3A8200C9340A /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5E15AE18AF3A8200C9340A /* AFSecurityPolicy.m */; };
+		9F5E15BC18AF3A8200C9340A /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5E15B018AF3A8200C9340A /* AFURLConnectionOperation.m */; };
+		9F5E15BD18AF3A8200C9340A /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5E15B218AF3A8200C9340A /* AFURLRequestSerialization.m */; };
+		9F5E15BE18AF3A8200C9340A /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5E15B418AF3A8200C9340A /* AFURLResponseSerialization.m */; };
+		9F5E15BF18AF3A8200C9340A /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5E15B618AF3A8200C9340A /* AFURLSessionManager.m */; };
+		9F5E15C818AF3C7000C9340A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F5E15C418AF3C7000C9340A /* CFNetwork.framework */; };
+		9F5E15C918AF3C7000C9340A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F5E15C518AF3C7000C9340A /* libz.dylib */; };
+		9F5E15CA18AF3C7000C9340A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F5E15C618AF3C7000C9340A /* MobileCoreServices.framework */; };
+		9F5E15CB18AF3C7000C9340A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F5E15C718AF3C7000C9340A /* SystemConfiguration.framework */; };
+		9F5E15CE18AF4C4200C9340A /* ZapposUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5E15CD18AF4C4200C9340A /* ZapposUtilities.m */; };
+		9F5E15D118AF5C3300C9340A /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5E15D018AF5C3300C9340A /* MBProgressHUD.m */; };
+		9F5E15D418B05A0000C9340A /* ZapposTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5E15D318B05A0000C9340A /* ZapposTableViewCell.m */; };
+		9F5E15D718B0615E00C9340A /* ZapposImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5E15D618B0615E00C9340A /* ZapposImageViewController.m */; };
+		9F5E15DB18B0618E00C9340A /* SickTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5E15DA18B0618E00C9340A /* SickTransition.m */; };
+		9F64072318B1C6EA003C532C /* AwesomeTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F64072218B1C6EA003C532C /* AwesomeTransition.m */; };
+		9F64073B18B5B704003C532C /* ID-button-pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F64072518B5B704003C532C /* ID-button-pressed.png */; };
+		9F64073C18B5B704003C532C /* ID-button-pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F64072618B5B704003C532C /* ID-button-pressed@2x.png */; };
+		9F64073D18B5B704003C532C /* ID-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F64072718B5B704003C532C /* ID-button.png */; };
+		9F64073E18B5B704003C532C /* ID-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F64072818B5B704003C532C /* ID-button@2x.png */; };
+		9F64073F18B5B704003C532C /* Name-button-pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F64072918B5B704003C532C /* Name-button-pressed.png */; };
+		9F64074018B5B704003C532C /* Name-button-pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F64072A18B5B704003C532C /* Name-button-pressed@2x.png */; };
+		9F64074118B5B704003C532C /* Name-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F64072B18B5B704003C532C /* Name-button.png */; };
+		9F64074218B5B704003C532C /* Name-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F64072C18B5B704003C532C /* Name-button@2x.png */; };
+		9F64074318B5B704003C532C /* Rectangle-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F64072D18B5B704003C532C /* Rectangle-1.png */; };
+		9F64074418B5B704003C532C /* Rectangle-1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F64072E18B5B704003C532C /* Rectangle-1@2x.png */; };
+		9F64074518B5B704003C532C /* Rectangle-2-copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F64072F18B5B704003C532C /* Rectangle-2-copy.png */; };
+		9F64074618B5B704003C532C /* Rectangle-2-copy@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F64073018B5B704003C532C /* Rectangle-2-copy@2x.png */; };
+		9F64074718B5B704003C532C /* Rectangle-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F64073118B5B704003C532C /* Rectangle-2.png */; };
+		9F64074818B5B704003C532C /* Rectangle-2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F64073218B5B704003C532C /* Rectangle-2@2x.png */; };
+		9F64074918B5B704003C532C /* Request-Button-pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F64073318B5B704003C532C /* Request-Button-pressed.png */; };
+		9F64074A18B5B704003C532C /* Request-Button-pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F64073418B5B704003C532C /* Request-Button-pressed@2x.png */; };
+		9F64074B18B5B704003C532C /* Request-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F64073518B5B704003C532C /* Request-Button.png */; };
+		9F64074C18B5B704003C532C /* Request-Button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F64073618B5B704003C532C /* Request-Button@2x.png */; };
+		9F64074D18B5B704003C532C /* TextBox-expanded.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F64073718B5B704003C532C /* TextBox-expanded.png */; };
+		9F64074E18B5B704003C532C /* TextBox-expanded@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F64073818B5B704003C532C /* TextBox-expanded@2x.png */; };
+		9F64074F18B5B704003C532C /* Zappos.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F64073918B5B704003C532C /* Zappos.png */; };
+		9F64075018B5B704003C532C /* Zappos@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F64073A18B5B704003C532C /* Zappos@2x.png */; };
+		9F64075318B5B98D003C532C /* ZapposCustomTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F64075218B5B98D003C532C /* ZapposCustomTextField.m */; };
+		9F64075B18B5C78A003C532C /* OBShapedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F64075718B5C78A003C532C /* OBShapedButton.m */; };
+		9F64075C18B5C78A003C532C /* UIImage+ColorAtPixel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F64075A18B5C78A003C532C /* UIImage+ColorAtPixel.m */; };
+		9F64075F18B5D9A7003C532C /* ZapposCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F64075E18B5D9A7003C532C /* ZapposCircleView.m */; };
+		9F6407A218B6F6E7003C532C /* cancel-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F64079E18B6F6E7003C532C /* cancel-button.png */; };
+		9F6407A318B6F6E7003C532C /* cancel-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F64079F18B6F6E7003C532C /* cancel-button@2x.png */; };
+		9F6407A418B6F6E7003C532C /* Check-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F6407A018B6F6E7003C532C /* Check-button.png */; };
+		9F6407A518B6F6E7003C532C /* Check-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F6407A118B6F6E7003C532C /* Check-button@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9F5E158E18AF354500C9340A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F5E156618AF354500C9340A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F5E156D18AF354500C9340A;
+			remoteInfo = ZapposChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9F2D116A18BBBCAF00E94793 /* logo-29pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-29pt.png"; sourceTree = "<group>"; };
+		9F2D116B18BBBCAF00E94793 /* logo-40pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-40pt.png"; sourceTree = "<group>"; };
+		9F2D116C18BBBCAF00E94793 /* logo-60pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-60pt.png"; sourceTree = "<group>"; };
+		9F2F935D18B072210034E826 /* ZapposProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZapposProduct.h; sourceTree = "<group>"; };
+		9F2F935E18B072210034E826 /* ZapposProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZapposProduct.m; sourceTree = "<group>"; };
+		9F2F936018B07D400034E826 /* ZapposSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZapposSelectionViewController.h; sourceTree = "<group>"; };
+		9F2F936118B07D400034E826 /* ZapposSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZapposSelectionViewController.m; sourceTree = "<group>"; };
+		9F5E156E18AF354500C9340A /* ZapposChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZapposChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F5E157118AF354500C9340A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9F5E157318AF354500C9340A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9F5E157518AF354500C9340A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9F5E157918AF354500C9340A /* ZapposChallenge-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZapposChallenge-Info.plist"; sourceTree = "<group>"; };
+		9F5E157B18AF354500C9340A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9F5E157D18AF354500C9340A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9F5E157F18AF354500C9340A /* ZapposChallenge-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZapposChallenge-Prefix.pch"; sourceTree = "<group>"; };
+		9F5E158018AF354500C9340A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9F5E158118AF354500C9340A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9F5E158318AF354500C9340A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9F5E158918AF354500C9340A /* ZapposChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZapposChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F5E158A18AF354500C9340A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		9F5E159218AF354500C9340A /* ZapposChallengeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZapposChallengeTests-Info.plist"; sourceTree = "<group>"; };
+		9F5E159418AF354500C9340A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9F5E159618AF354500C9340A /* ZapposChallengeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZapposChallengeTests.m; sourceTree = "<group>"; };
+		9F5E15A018AF370500C9340A /* ZapposViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZapposViewController.h; sourceTree = "<group>"; };
+		9F5E15A118AF370500C9340A /* ZapposViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZapposViewController.m; sourceTree = "<group>"; };
+		9F5E15A418AF3A8200C9340A /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		9F5E15A518AF3A8200C9340A /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		9F5E15A618AF3A8200C9340A /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		9F5E15A718AF3A8200C9340A /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		9F5E15A818AF3A8200C9340A /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		9F5E15A918AF3A8200C9340A /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		9F5E15AA18AF3A8200C9340A /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		9F5E15AB18AF3A8200C9340A /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		9F5E15AC18AF3A8200C9340A /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		9F5E15AD18AF3A8200C9340A /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		9F5E15AE18AF3A8200C9340A /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		9F5E15AF18AF3A8200C9340A /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		9F5E15B018AF3A8200C9340A /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		9F5E15B118AF3A8200C9340A /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		9F5E15B218AF3A8200C9340A /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		9F5E15B318AF3A8200C9340A /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		9F5E15B418AF3A8200C9340A /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		9F5E15B518AF3A8200C9340A /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		9F5E15B618AF3A8200C9340A /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		9F5E15C418AF3C7000C9340A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		9F5E15C518AF3C7000C9340A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		9F5E15C618AF3C7000C9340A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		9F5E15C718AF3C7000C9340A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		9F5E15CC18AF4C4200C9340A /* ZapposUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZapposUtilities.h; sourceTree = "<group>"; };
+		9F5E15CD18AF4C4200C9340A /* ZapposUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZapposUtilities.m; sourceTree = "<group>"; };
+		9F5E15CF18AF5C3300C9340A /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		9F5E15D018AF5C3300C9340A /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		9F5E15D218B05A0000C9340A /* ZapposTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZapposTableViewCell.h; sourceTree = "<group>"; };
+		9F5E15D318B05A0000C9340A /* ZapposTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZapposTableViewCell.m; sourceTree = "<group>"; };
+		9F5E15D518B0615E00C9340A /* ZapposImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZapposImageViewController.h; sourceTree = "<group>"; };
+		9F5E15D618B0615E00C9340A /* ZapposImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZapposImageViewController.m; sourceTree = "<group>"; };
+		9F5E15D918B0618E00C9340A /* SickTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SickTransition.h; sourceTree = "<group>"; };
+		9F5E15DA18B0618E00C9340A /* SickTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SickTransition.m; sourceTree = "<group>"; };
+		9F64072118B1C6EA003C532C /* AwesomeTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AwesomeTransition.h; sourceTree = "<group>"; };
+		9F64072218B1C6EA003C532C /* AwesomeTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AwesomeTransition.m; sourceTree = "<group>"; };
+		9F64072518B5B704003C532C /* ID-button-pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ID-button-pressed.png"; sourceTree = "<group>"; };
+		9F64072618B5B704003C532C /* ID-button-pressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ID-button-pressed@2x.png"; sourceTree = "<group>"; };
+		9F64072718B5B704003C532C /* ID-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ID-button.png"; sourceTree = "<group>"; };
+		9F64072818B5B704003C532C /* ID-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ID-button@2x.png"; sourceTree = "<group>"; };
+		9F64072918B5B704003C532C /* Name-button-pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Name-button-pressed.png"; sourceTree = "<group>"; };
+		9F64072A18B5B704003C532C /* Name-button-pressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Name-button-pressed@2x.png"; sourceTree = "<group>"; };
+		9F64072B18B5B704003C532C /* Name-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Name-button.png"; sourceTree = "<group>"; };
+		9F64072C18B5B704003C532C /* Name-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Name-button@2x.png"; sourceTree = "<group>"; };
+		9F64072D18B5B704003C532C /* Rectangle-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle-1.png"; sourceTree = "<group>"; };
+		9F64072E18B5B704003C532C /* Rectangle-1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle-1@2x.png"; sourceTree = "<group>"; };
+		9F64072F18B5B704003C532C /* Rectangle-2-copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle-2-copy.png"; sourceTree = "<group>"; };
+		9F64073018B5B704003C532C /* Rectangle-2-copy@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle-2-copy@2x.png"; sourceTree = "<group>"; };
+		9F64073118B5B704003C532C /* Rectangle-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle-2.png"; sourceTree = "<group>"; };
+		9F64073218B5B704003C532C /* Rectangle-2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle-2@2x.png"; sourceTree = "<group>"; };
+		9F64073318B5B704003C532C /* Request-Button-pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Request-Button-pressed.png"; sourceTree = "<group>"; };
+		9F64073418B5B704003C532C /* Request-Button-pressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Request-Button-pressed@2x.png"; sourceTree = "<group>"; };
+		9F64073518B5B704003C532C /* Request-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Request-Button.png"; sourceTree = "<group>"; };
+		9F64073618B5B704003C532C /* Request-Button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Request-Button@2x.png"; sourceTree = "<group>"; };
+		9F64073718B5B704003C532C /* TextBox-expanded.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TextBox-expanded.png"; sourceTree = "<group>"; };
+		9F64073818B5B704003C532C /* TextBox-expanded@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TextBox-expanded@2x.png"; sourceTree = "<group>"; };
+		9F64073918B5B704003C532C /* Zappos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Zappos.png; sourceTree = "<group>"; };
+		9F64073A18B5B704003C532C /* Zappos@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Zappos@2x.png"; sourceTree = "<group>"; };
+		9F64075118B5B98D003C532C /* ZapposCustomTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZapposCustomTextField.h; sourceTree = "<group>"; };
+		9F64075218B5B98D003C532C /* ZapposCustomTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZapposCustomTextField.m; sourceTree = "<group>"; };
+		9F64075618B5C78A003C532C /* OBShapedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBShapedButton.h; sourceTree = "<group>"; };
+		9F64075718B5C78A003C532C /* OBShapedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBShapedButton.m; sourceTree = "<group>"; };
+		9F64075918B5C78A003C532C /* UIImage+ColorAtPixel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ColorAtPixel.h"; sourceTree = "<group>"; };
+		9F64075A18B5C78A003C532C /* UIImage+ColorAtPixel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ColorAtPixel.m"; sourceTree = "<group>"; };
+		9F64075D18B5D9A7003C532C /* ZapposCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZapposCircleView.h; sourceTree = "<group>"; };
+		9F64075E18B5D9A7003C532C /* ZapposCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZapposCircleView.m; sourceTree = "<group>"; };
+		9F64079E18B6F6E7003C532C /* cancel-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cancel-button.png"; sourceTree = "<group>"; };
+		9F64079F18B6F6E7003C532C /* cancel-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cancel-button@2x.png"; sourceTree = "<group>"; };
+		9F6407A018B6F6E7003C532C /* Check-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Check-button.png"; sourceTree = "<group>"; };
+		9F6407A118B6F6E7003C532C /* Check-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Check-button@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9F5E156B18AF354500C9340A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F5E15C818AF3C7000C9340A /* CFNetwork.framework in Frameworks */,
+				9F5E15C918AF3C7000C9340A /* libz.dylib in Frameworks */,
+				9F5E15CA18AF3C7000C9340A /* MobileCoreServices.framework in Frameworks */,
+				9F5E15CB18AF3C7000C9340A /* SystemConfiguration.framework in Frameworks */,
+				9F5E157418AF354500C9340A /* CoreGraphics.framework in Frameworks */,
+				9F5E157618AF354500C9340A /* UIKit.framework in Frameworks */,
+				9F5E157218AF354500C9340A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F5E158618AF354500C9340A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F5E158B18AF354500C9340A /* XCTest.framework in Frameworks */,
+				9F5E158D18AF354500C9340A /* UIKit.framework in Frameworks */,
+				9F5E158C18AF354500C9340A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9F5E156518AF354500C9340A = {
+			isa = PBXGroup;
+			children = (
+				9F5E157718AF354500C9340A /* ZapposChallenge */,
+				9F5E159018AF354500C9340A /* ZapposChallengeTests */,
+				9F5E157018AF354500C9340A /* Frameworks */,
+				9F5E156F18AF354500C9340A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9F5E156F18AF354500C9340A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F5E156E18AF354500C9340A /* ZapposChallenge.app */,
+				9F5E158918AF354500C9340A /* ZapposChallengeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F5E157018AF354500C9340A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F5E15C418AF3C7000C9340A /* CFNetwork.framework */,
+				9F5E15C518AF3C7000C9340A /* libz.dylib */,
+				9F5E15C618AF3C7000C9340A /* MobileCoreServices.framework */,
+				9F5E15C718AF3C7000C9340A /* SystemConfiguration.framework */,
+				9F5E157118AF354500C9340A /* Foundation.framework */,
+				9F5E157318AF354500C9340A /* CoreGraphics.framework */,
+				9F5E157518AF354500C9340A /* UIKit.framework */,
+				9F5E158A18AF354500C9340A /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9F5E157718AF354500C9340A /* ZapposChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				9F64075518B5C78A003C532C /* OBShapedButton */,
+				9F64075818B5C78A003C532C /* UIImage+ColorAtPixel */,
+				9F64075418B5B9A2003C532C /* Utilities&Models */,
+				9F5E15CF18AF5C3300C9340A /* MBProgressHUD.h */,
+				9F5E15D018AF5C3300C9340A /* MBProgressHUD.m */,
+				9F5E158018AF354500C9340A /* AppDelegate.h */,
+				9F5E158118AF354500C9340A /* AppDelegate.m */,
+				9F5E15A018AF370500C9340A /* ZapposViewController.h */,
+				9F5E15A118AF370500C9340A /* ZapposViewController.m */,
+				9F64075D18B5D9A7003C532C /* ZapposCircleView.h */,
+				9F64075E18B5D9A7003C532C /* ZapposCircleView.m */,
+				9F64075118B5B98D003C532C /* ZapposCustomTextField.h */,
+				9F64075218B5B98D003C532C /* ZapposCustomTextField.m */,
+				9F2F936018B07D400034E826 /* ZapposSelectionViewController.h */,
+				9F2F936118B07D400034E826 /* ZapposSelectionViewController.m */,
+				9F5E15D218B05A0000C9340A /* ZapposTableViewCell.h */,
+				9F5E15D318B05A0000C9340A /* ZapposTableViewCell.m */,
+				9F5E15D518B0615E00C9340A /* ZapposImageViewController.h */,
+				9F5E15D618B0615E00C9340A /* ZapposImageViewController.m */,
+				9F5E15D818B0617900C9340A /* Animations */,
+				9F5E158318AF354500C9340A /* Images.xcassets */,
+				9F5E15A318AF3A8200C9340A /* AFNetworking */,
+				9F5E157818AF354500C9340A /* Supporting Files */,
+			);
+			path = ZapposChallenge;
+			sourceTree = "<group>";
+		};
+		9F5E157818AF354500C9340A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9F64072418B5B6E2003C532C /* Images */,
+				9F5E157918AF354500C9340A /* ZapposChallenge-Info.plist */,
+				9F5E157A18AF354500C9340A /* InfoPlist.strings */,
+				9F5E157D18AF354500C9340A /* main.m */,
+				9F5E157F18AF354500C9340A /* ZapposChallenge-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9F5E159018AF354500C9340A /* ZapposChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				9F5E159618AF354500C9340A /* ZapposChallengeTests.m */,
+				9F5E159118AF354500C9340A /* Supporting Files */,
+			);
+			path = ZapposChallengeTests;
+			sourceTree = "<group>";
+		};
+		9F5E159118AF354500C9340A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9F5E159218AF354500C9340A /* ZapposChallengeTests-Info.plist */,
+				9F5E159318AF354500C9340A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9F5E15A318AF3A8200C9340A /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				9F5E15A418AF3A8200C9340A /* AFHTTPRequestOperation.h */,
+				9F5E15A518AF3A8200C9340A /* AFHTTPRequestOperation.m */,
+				9F5E15A618AF3A8200C9340A /* AFHTTPRequestOperationManager.h */,
+				9F5E15A718AF3A8200C9340A /* AFHTTPRequestOperationManager.m */,
+				9F5E15A818AF3A8200C9340A /* AFHTTPSessionManager.h */,
+				9F5E15A918AF3A8200C9340A /* AFHTTPSessionManager.m */,
+				9F5E15AA18AF3A8200C9340A /* AFNetworking.h */,
+				9F5E15AB18AF3A8200C9340A /* AFNetworkReachabilityManager.h */,
+				9F5E15AC18AF3A8200C9340A /* AFNetworkReachabilityManager.m */,
+				9F5E15AD18AF3A8200C9340A /* AFSecurityPolicy.h */,
+				9F5E15AE18AF3A8200C9340A /* AFSecurityPolicy.m */,
+				9F5E15AF18AF3A8200C9340A /* AFURLConnectionOperation.h */,
+				9F5E15B018AF3A8200C9340A /* AFURLConnectionOperation.m */,
+				9F5E15B118AF3A8200C9340A /* AFURLRequestSerialization.h */,
+				9F5E15B218AF3A8200C9340A /* AFURLRequestSerialization.m */,
+				9F5E15B318AF3A8200C9340A /* AFURLResponseSerialization.h */,
+				9F5E15B418AF3A8200C9340A /* AFURLResponseSerialization.m */,
+				9F5E15B518AF3A8200C9340A /* AFURLSessionManager.h */,
+				9F5E15B618AF3A8200C9340A /* AFURLSessionManager.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		9F5E15D818B0617900C9340A /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				9F5E15D918B0618E00C9340A /* SickTransition.h */,
+				9F5E15DA18B0618E00C9340A /* SickTransition.m */,
+				9F64072118B1C6EA003C532C /* AwesomeTransition.h */,
+				9F64072218B1C6EA003C532C /* AwesomeTransition.m */,
+			);
+			name = Animations;
+			sourceTree = "<group>";
+		};
+		9F64072418B5B6E2003C532C /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				9F2D116A18BBBCAF00E94793 /* logo-29pt.png */,
+				9F2D116B18BBBCAF00E94793 /* logo-40pt.png */,
+				9F2D116C18BBBCAF00E94793 /* logo-60pt.png */,
+				9F64079E18B6F6E7003C532C /* cancel-button.png */,
+				9F64079F18B6F6E7003C532C /* cancel-button@2x.png */,
+				9F6407A018B6F6E7003C532C /* Check-button.png */,
+				9F6407A118B6F6E7003C532C /* Check-button@2x.png */,
+				9F64072518B5B704003C532C /* ID-button-pressed.png */,
+				9F64072618B5B704003C532C /* ID-button-pressed@2x.png */,
+				9F64072718B5B704003C532C /* ID-button.png */,
+				9F64072818B5B704003C532C /* ID-button@2x.png */,
+				9F64072918B5B704003C532C /* Name-button-pressed.png */,
+				9F64072A18B5B704003C532C /* Name-button-pressed@2x.png */,
+				9F64072B18B5B704003C532C /* Name-button.png */,
+				9F64072C18B5B704003C532C /* Name-button@2x.png */,
+				9F64072D18B5B704003C532C /* Rectangle-1.png */,
+				9F64072E18B5B704003C532C /* Rectangle-1@2x.png */,
+				9F64072F18B5B704003C532C /* Rectangle-2-copy.png */,
+				9F64073018B5B704003C532C /* Rectangle-2-copy@2x.png */,
+				9F64073118B5B704003C532C /* Rectangle-2.png */,
+				9F64073218B5B704003C532C /* Rectangle-2@2x.png */,
+				9F64073318B5B704003C532C /* Request-Button-pressed.png */,
+				9F64073418B5B704003C532C /* Request-Button-pressed@2x.png */,
+				9F64073518B5B704003C532C /* Request-Button.png */,
+				9F64073618B5B704003C532C /* Request-Button@2x.png */,
+				9F64073718B5B704003C532C /* TextBox-expanded.png */,
+				9F64073818B5B704003C532C /* TextBox-expanded@2x.png */,
+				9F64073918B5B704003C532C /* Zappos.png */,
+				9F64073A18B5B704003C532C /* Zappos@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		9F64075418B5B9A2003C532C /* Utilities&Models */ = {
+			isa = PBXGroup;
+			children = (
+				9F5E15CC18AF4C4200C9340A /* ZapposUtilities.h */,
+				9F5E15CD18AF4C4200C9340A /* ZapposUtilities.m */,
+				9F2F935D18B072210034E826 /* ZapposProduct.h */,
+				9F2F935E18B072210034E826 /* ZapposProduct.m */,
+			);
+			name = "Utilities&Models";
+			sourceTree = "<group>";
+		};
+		9F64075518B5C78A003C532C /* OBShapedButton */ = {
+			isa = PBXGroup;
+			children = (
+				9F64075618B5C78A003C532C /* OBShapedButton.h */,
+				9F64075718B5C78A003C532C /* OBShapedButton.m */,
+			);
+			path = OBShapedButton;
+			sourceTree = "<group>";
+		};
+		9F64075818B5C78A003C532C /* UIImage+ColorAtPixel */ = {
+			isa = PBXGroup;
+			children = (
+				9F64075918B5C78A003C532C /* UIImage+ColorAtPixel.h */,
+				9F64075A18B5C78A003C532C /* UIImage+ColorAtPixel.m */,
+			);
+			path = "UIImage+ColorAtPixel";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9F5E156D18AF354500C9340A /* ZapposChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F5E159A18AF354500C9340A /* Build configuration list for PBXNativeTarget "ZapposChallenge" */;
+			buildPhases = (
+				9F5E156A18AF354500C9340A /* Sources */,
+				9F5E156B18AF354500C9340A /* Frameworks */,
+				9F5E156C18AF354500C9340A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZapposChallenge;
+			productName = ZapposChallenge;
+			productReference = 9F5E156E18AF354500C9340A /* ZapposChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9F5E158818AF354500C9340A /* ZapposChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F5E159D18AF354500C9340A /* Build configuration list for PBXNativeTarget "ZapposChallengeTests" */;
+			buildPhases = (
+				9F5E158518AF354500C9340A /* Sources */,
+				9F5E158618AF354500C9340A /* Frameworks */,
+				9F5E158718AF354500C9340A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F5E158F18AF354500C9340A /* PBXTargetDependency */,
+			);
+			name = ZapposChallengeTests;
+			productName = ZapposChallengeTests;
+			productReference = 9F5E158918AF354500C9340A /* ZapposChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9F5E156618AF354500C9340A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Jacob Chen";
+				TargetAttributes = {
+					9F5E158818AF354500C9340A = {
+						TestTargetID = 9F5E156D18AF354500C9340A;
+					};
+				};
+			};
+			buildConfigurationList = 9F5E156918AF354500C9340A /* Build configuration list for PBXProject "ZapposChallenge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9F5E156518AF354500C9340A;
+			productRefGroup = 9F5E156F18AF354500C9340A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F5E156D18AF354500C9340A /* ZapposChallenge */,
+				9F5E158818AF354500C9340A /* ZapposChallengeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9F5E156C18AF354500C9340A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F64074918B5B704003C532C /* Request-Button-pressed.png in Resources */,
+				9F64073D18B5B704003C532C /* ID-button.png in Resources */,
+				9F64073C18B5B704003C532C /* ID-button-pressed@2x.png in Resources */,
+				9F64074E18B5B704003C532C /* TextBox-expanded@2x.png in Resources */,
+				9F64073E18B5B704003C532C /* ID-button@2x.png in Resources */,
+				9F6407A218B6F6E7003C532C /* cancel-button.png in Resources */,
+				9F64074418B5B704003C532C /* Rectangle-1@2x.png in Resources */,
+				9F6407A518B6F6E7003C532C /* Check-button@2x.png in Resources */,
+				9F2D116E18BBBCAF00E94793 /* logo-40pt.png in Resources */,
+				9F64074218B5B704003C532C /* Name-button@2x.png in Resources */,
+				9F64074818B5B704003C532C /* Rectangle-2@2x.png in Resources */,
+				9F64074718B5B704003C532C /* Rectangle-2.png in Resources */,
+				9F5E157C18AF354500C9340A /* InfoPlist.strings in Resources */,
+				9F5E158418AF354500C9340A /* Images.xcassets in Resources */,
+				9F6407A318B6F6E7003C532C /* cancel-button@2x.png in Resources */,
+				9F64074118B5B704003C532C /* Name-button.png in Resources */,
+				9F64074618B5B704003C532C /* Rectangle-2-copy@2x.png in Resources */,
+				9F64074D18B5B704003C532C /* TextBox-expanded.png in Resources */,
+				9F64073B18B5B704003C532C /* ID-button-pressed.png in Resources */,
+				9F2D116D18BBBCAF00E94793 /* logo-29pt.png in Resources */,
+				9F64074318B5B704003C532C /* Rectangle-1.png in Resources */,
+				9F64075018B5B704003C532C /* Zappos@2x.png in Resources */,
+				9F6407A418B6F6E7003C532C /* Check-button.png in Resources */,
+				9F2D116F18BBBCAF00E94793 /* logo-60pt.png in Resources */,
+				9F64074018B5B704003C532C /* Name-button-pressed@2x.png in Resources */,
+				9F64074F18B5B704003C532C /* Zappos.png in Resources */,
+				9F64074A18B5B704003C532C /* Request-Button-pressed@2x.png in Resources */,
+				9F64073F18B5B704003C532C /* Name-button-pressed.png in Resources */,
+				9F64074518B5B704003C532C /* Rectangle-2-copy.png in Resources */,
+				9F64074C18B5B704003C532C /* Request-Button@2x.png in Resources */,
+				9F64074B18B5B704003C532C /* Request-Button.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F5E158718AF354500C9340A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F5E159518AF354500C9340A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9F5E156A18AF354500C9340A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F5E15B718AF3A8200C9340A /* AFHTTPRequestOperation.m in Sources */,
+				9F5E158218AF354500C9340A /* AppDelegate.m in Sources */,
+				9F5E15B818AF3A8200C9340A /* AFHTTPRequestOperationManager.m in Sources */,
+				9F5E15D418B05A0000C9340A /* ZapposTableViewCell.m in Sources */,
+				9F5E15BA18AF3A8200C9340A /* AFNetworkReachabilityManager.m in Sources */,
+				9F64075B18B5C78A003C532C /* OBShapedButton.m in Sources */,
+				9F5E15DB18B0618E00C9340A /* SickTransition.m in Sources */,
+				9F2F935F18B072210034E826 /* ZapposProduct.m in Sources */,
+				9F5E15D718B0615E00C9340A /* ZapposImageViewController.m in Sources */,
+				9F5E15CE18AF4C4200C9340A /* ZapposUtilities.m in Sources */,
+				9F5E15BE18AF3A8200C9340A /* AFURLResponseSerialization.m in Sources */,
+				9F64075318B5B98D003C532C /* ZapposCustomTextField.m in Sources */,
+				9F5E15BC18AF3A8200C9340A /* AFURLConnectionOperation.m in Sources */,
+				9F5E15BB18AF3A8200C9340A /* AFSecurityPolicy.m in Sources */,
+				9F5E15B918AF3A8200C9340A /* AFHTTPSessionManager.m in Sources */,
+				9F2F936218B07D400034E826 /* ZapposSelectionViewController.m in Sources */,
+				9F5E15BD18AF3A8200C9340A /* AFURLRequestSerialization.m in Sources */,
+				9F5E15BF18AF3A8200C9340A /* AFURLSessionManager.m in Sources */,
+				9F5E157E18AF354500C9340A /* main.m in Sources */,
+				9F5E15A218AF370500C9340A /* ZapposViewController.m in Sources */,
+				9F64072318B1C6EA003C532C /* AwesomeTransition.m in Sources */,
+				9F64075C18B5C78A003C532C /* UIImage+ColorAtPixel.m in Sources */,
+				9F5E15D118AF5C3300C9340A /* MBProgressHUD.m in Sources */,
+				9F64075F18B5D9A7003C532C /* ZapposCircleView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F5E158518AF354500C9340A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F5E159718AF354500C9340A /* ZapposChallengeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9F5E158F18AF354500C9340A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F5E156D18AF354500C9340A /* ZapposChallenge */;
+			targetProxy = 9F5E158E18AF354500C9340A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9F5E157A18AF354500C9340A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F5E157B18AF354500C9340A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9F5E159318AF354500C9340A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F5E159418AF354500C9340A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9F5E159818AF354500C9340A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9F5E159918AF354500C9340A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9F5E159B18AF354500C9340A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZapposChallenge/ZapposChallenge-Prefix.pch";
+				INFOPLIST_FILE = "ZapposChallenge/ZapposChallenge-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9F5E159C18AF354500C9340A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZapposChallenge/ZapposChallenge-Prefix.pch";
+				INFOPLIST_FILE = "ZapposChallenge/ZapposChallenge-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		9F5E159E18AF354500C9340A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ZapposChallenge.app/ZapposChallenge";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZapposChallenge/ZapposChallenge-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ZapposChallengeTests/ZapposChallengeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		9F5E159F18AF354500C9340A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ZapposChallenge.app/ZapposChallenge";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZapposChallenge/ZapposChallenge-Prefix.pch";
+				INFOPLIST_FILE = "ZapposChallengeTests/ZapposChallengeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9F5E156918AF354500C9340A /* Build configuration list for PBXProject "ZapposChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F5E159818AF354500C9340A /* Debug */,
+				9F5E159918AF354500C9340A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F5E159A18AF354500C9340A /* Build configuration list for PBXNativeTarget "ZapposChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F5E159B18AF354500C9340A /* Debug */,
+				9F5E159C18AF354500C9340A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F5E159D18AF354500C9340A /* Build configuration list for PBXNativeTarget "ZapposChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F5E159E18AF354500C9340A /* Debug */,
+				9F5E159F18AF354500C9340A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9F5E156618AF354500C9340A /* Project object */;
+}
