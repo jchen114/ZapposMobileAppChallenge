@@ -3,9 +3,14 @@ ZapposMobileAppChallenge
 
 Zappos Mobile Application
 
-This was a coding challenge that I completed for Zappos. 
-The purpose of this application was to provide an email and a product name or product ID for this application to watch. 
-I used google app engine as my backend to faciliate scheduled query calls to the zappos server.
+Background:
+Zappos Challenge
+Because this challenge required me to notify a user when a product was 20% off, I needed a way of implementing a scheduled task that would query the zappos server and determine whether or not the product in question was on sale. I chose to use Google App Engine as my backend since it allowed for data storage as well cron job implementation. Attached with this document is the xcode project (developed for iOS7) as well as the backend project used to process the requests.
 
+Application Flow:
+The client would input their email as well as either a product ID or a product name. The device would then send a POST request to the servlet once the client presses the request button in the application and wait for a response. Since a product ID is unique, the servlet will either return true or false indicating a status of success or failure. If the user specified a product name, the response would contain the status as well as an array of products that collide with the product name. If the product name is unique (all products having the same product ID) the servlet will go ahead and store the product ID as well as the email into the data storage and return an empty array. If there are collisions with the product name, the servlet will only return the unique products with different product ID’s. Once the response is received, the application will display either an alert specifying the status of the request or present a table for which the user may select their desired product. I have given the option of viewing the product before selecting the desired product. The product ID will then be automatically put into the text field and ready to be sent to the servlet. All the error checking of the fields is done on the client-side before being sent to the servlet.
+
+Backend:
+Once the servlet receives the POST request, it decides whether or not the product ID or product name has been filled or not in order to undertake the correct action. The servlet first queries the Zappos server to determine whether or not the product actually exists. If the field posted is of product ID, the servlet will return a status response as well as an empty array. If the field posted is of product name, the servlet will query the server and receive the objects colliding with the product name. If there is more than one object, the servlet will sift through the results to find the unique products with different product ID’s and use them as a response to the client for further action. The servlet will only store the product ID and email address in the data-storage if the product posted exists and is unique. Once the product ID and email address is stored, it is subject to a cron job that runs every five minutes. This cron job calls another servlet with a GET request that iterates through all the entries in the data-storage. The servlet will then query the Zappos server using the product ID specified and determine if the product is more than 20% off. If it is, then it will go ahead and construct a descriptive email about the product on sale and send it to the associated email address.
 
 The ZapposMobileAppChallenge was developed for iPhone.
